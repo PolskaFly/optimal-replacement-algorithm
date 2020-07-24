@@ -3,7 +3,7 @@ class OptimalPageReplacement:
         self.capacity = capacity
         self.cache = []
 
-    def opr_algorithm(self, distance, trace, pos) -> None:
+    def opt_algorithm(self, distance, trace, pos) -> None:
         for x in range(len(self.cache)):
             # if statement to check if x is referenced ever again.
             if self.cache[x] not in trace[slice(pos + 1, None)]:
@@ -33,7 +33,7 @@ for i in range(len(trace)):
         if len(cache.cache) < capacity:
             cache.cache.append(trace[i])
         else:
-            cache.opr_algorithm(distance, trace, i)
+            cache.opt_algorithm(distance, trace, i)
         faults += 1
         print(cache.cache)
     else:
