@@ -5,8 +5,7 @@ Currently performance is poor as the max() function as well as a for loop adds m
 
 Data:
 Multi1
-![Multi1](https://github.com/PolskaFly/optimal-replacement-algorithm/blob/master/images/multi1.png
-)
+![Multi1](https://github.com/PolskaFly/optimal-replacement-algorithm/blob/master/images/multi1.png)
 
 
 Multi2
